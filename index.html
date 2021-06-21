@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Smiles</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Smiles</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2 rounded-pill" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-outline-primary rounded-pill" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-danger rounded-pill" data-bs-toggle="modal"
+                        data-bs-target="#LoginModal">Login</button>
+                    <button class="btn btn-danger rounded-pill" data-bs-toggle="modal"
+                        data-bs-target="#SignUpModal">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Login  -->
+
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LoginModalLabel">Login to Smiles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="abc@gmail.com">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Keep me logged in</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary rounded-pill">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SignUp  -->
+
+    <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="SignUpModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <label for="First" class="form-label">First Name</label>
+                            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <label for="Lasr" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                        </div>
+                    </div>
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="abc@gmail.com">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary rounded-pill">Create Account</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Head -->
+
+    <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="h5.jpg" alt="" class="bd-placeholder-img" width="100%" height="600">
+                <div class="container">
+                    <div class="carousel-caption text-start ">
+                        <h1 class="text-danger">Vaccination is the prevention against covid</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <img src="h6.jpg" alt="" class="bd-placeholder-img" width="100%" height="600">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1 class="text-danger">Small Donations can bring smile to millions of face</h1>
+                        <p>The agenda of our organization is to bring smiles to faces</p>
+                        <p><a class="btn btn-lg btn-danger rounded-pill" href="https://rzp.io/l/jxqAiWQ">Donate</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="h3.jpg" alt="" class="bd-placeholder-img" width="100%" height="600">
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <p><a class="btn btn-lg btn-primary rounded-pill" href="https://www.covid19india.org/"
+                                target="_blank">Covid Updates</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container marketing my-4">
+
+
+        <!-- Information -->
+
+        <div class="row p-3 mb-2 bg-light text-dark">
+            <div class="col-lg-4">
+                <img src="m2.jpg" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140">
+                <h2>Lockdown</h2>
+                <p>On the evening of 24 March 2020, the Government of India under Prime Minister Narendra Modi ordered a
+                    nationwide lockdown </p>
+                <p><a class="btn btn-secondary" href="https://timesofindia.indiatimes.com/topic/lockdown"
+                        target="_blank">View details »</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img src="m1.jpg" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140">
+
+                <h2>Vaccination Drives in India</h2>
+                <p>India began administration of COVID-19 vaccines on 16 January 2021</p>
+                <p><a class="btn btn-secondary" href="https://www.mohfw.gov.in/covid_vaccination/vaccination/index.html"
+                        target="_blank">View details »</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img src="m3.jpg" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140">
+                <h2>Post Covid Affects</h2>
+                <p>Post-COVID conditions are a wide range of new, returning, or ongoing health problems people can
+                    experience more than four weeks after first being infected with the virus that causes COVID-19</p>
+                <p><a class="btn btn-secondary" href="https://www.cdc.gov/coronavirus/2019-ncov/long-term-effects.html"
+                        target="_blank">View details »</a></p>
+            </div>
+        </div>
+
+
+        <!-- About -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette p-3 mb-2 bg-light text-dark">
+            <div class="col-md-7">
+                <h2 class="featurette-heading shadow p-3 mb-5 bg-body rounded">Literacy Rate Of India</h2>
+                <p class="lead">Literacy in India is a key for socio-economic progress. Despite government
+                    programmes, India's literacy rate increased only "sluggishly". The 2011 census, indicated a
+                    2001–2011 decadal literacy growth of 9.2%, which is slower than the growth seen during the previous
+                    decade. An old analytical 1990 study estimated that it would take until 2060 for India to achieve
+                    universal literacy at then-current rate of progress.Census of India pegged average literacy rate to
+                    be 74.4% in 2011 while National Statistical Commission surveyed literacy to be 77.7% in 2017–18.</p>
+            </div>
+            <div class="col-md-5 my-5">
+                <img src="s1.jpg" alt=""
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="288px" margin="92px">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette p-3 mb-2 bg-light text-dark">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading shadow p-3 mb-5 bg-body rounded">We are in this together</h2>
+                <p class="lead">When the country is facing tough times we donate foods to needy people and help millions
+                    of people to bring smiles on their faces.We need your help to make India covid free and no one sleep
+                    with hungry stomach. Its time to help our country because we can do this together.
+                    <br>“Holding hands, for example, is a way to remember how it feels to say nothing together.”
+                </p>
+            </div>
+            <div class="col-md-5 order-md-1 my-5">
+                <img src="s2.webp" alt=""
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette p-3 mb-2 bg-light text-dark">
+            <div class="col-md-7">
+                <h2 class="featurette-heading shadow p-3 mb-5 bg-body rounded">Impact of Covid on Indian Economy</h2>
+                <p class="lead">An unprecedented rise in Covid-19 cases is likely to slow down India's economic
+                    recovery, but the overall impact will be milder in comparison to last year's devastation. Experts
+                    say that extent of economic loss during the second wave will primarily depend on how fast the chain
+                    of infections can be broken.While Covid-19 containment rules are less stringent compared to last
+                    year’s nationwide lockdown,economic activity is gradually declining as more states opt for stricter
+                    norms to contain rapidly rising daily cases.</p>
+            </div>
+            <div class="col-md-5 my-5">
+                <img src="s3.webp" alt=""
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+
+        <!-- Contact Us -->
+
+        <div class="container my-4 p-3 mb-2 bg-light text-dark">
+            <h2>Contact Us</h2>
+            <form action="">
+                <div class="mb-3">
+                    <label>Name</label>
+                    <input type="Name" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Name">
+                </div>
+                <div class="mb-3">
+                    <label>Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label>Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Suggestions"></textarea>
+                </div>
+                <button class="btn btn-primary rounded-pill">Submit</button>
+            </form>
+        </div>
+
+        <!-- Footer -->
+
+        <footer class="container my-4">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>© 2020–2021 Smiles, Inc.<a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+
+        <!--  Bootstrap Bundle with Popper -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
